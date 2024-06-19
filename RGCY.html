@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1" >
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <title>黑暗三角人格測驗</title>
+</head>
+<style>
+.dropdown {position: relative; display: inline-block;}
+.dropbtn {background-color: #4D4D4D; color: white; padding: 16px; font-size: 16px; border: none;}
+.dropdown-content {display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; z-index: 1;}
+.dropdown-content a {color: black; padding: 12px 16px; text-decoration: none; display: block;background-color: #5F9EA0;}
+.show {display: block;}
+#header {height:200px;width:100%;background-color:#2F4F4F;background-repeat:no-repeat;background-size:cover;opacity:0.9;padding:1em; font-family:DFKai-sb}
+#article {height:128vh;background-color:#2F4F4F;background-repeat:no-repeat;background-size:cover;}
+a:link {color:#030303;}
+a:visited {color:#030303;}
+a:hover {color:#54FF9F;}
+a:active {color:#4D4D4D;}
+.column1 {float: left;width: 50%;background-color:#2F4F4F;background-size:cover;}
+font {color:#54FF9F;text-align:left; }
+h2 {color: #E0EEE0}
+h1 {color:#7CFC00}
+h4 {text-align:right}
+p {color:#7CFC00}
+form{color: #E0EEE0}
+* {box-sizing: border-box; margin:0;}
+@media screen and (max-width: 768px)
+{.column1{width: 100%; height: 90%;
+}
+}
+</style>
+<body>
+<div style="background-color:#668B8B;">
+  <div class="dropdown";>
+     <button onclick="myFunction()" class="dropbtn">更多測驗</button>
+     <div id="myDropdown" class="dropdown-content">
+     <a href="RGCY.html">黑暗三角人格測驗</a>
+     <a href="MBTI.html">MBTI</a>
+     </div>
+    </div>
+</div>
+<div id="header">
+  <font size="10"><b>黑暗三角人格測驗</b></font>
+  <p>測試的是人們有多少的黑暗一面，你'腹黑'的程度是?</p>
+  <p>12題，七點量表，請在下面每項描述旁寫下一個數字，代表你同不同意該描述的程度。</p>
+  <p>以1-7來表示: 1 非常不同意; 2 不同意; 3 有點不同意; 4 中立; 5 有點同意; 6 比較同意; 7 非常同意;(請盡量不要選中立的，結果比較準)</p>
+</div>
+<div id="article">
+  <div class="column1">
+    <h2>&nbsp1.我曾經通過恭維他人來達成自己的目的</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="1"></form>
+    <h2>&nbsp2.我通常不會自責或悔恨</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="2"></form>
+    <h2>&nbsp3.我會利用他人來成自己的目的</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="3"></form>
+    <h2>&nbsp4.我通常不在乎自己的行為是否符合道德</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="4"></form>
+    <h2>&nbsp5.我傾向於追求名聲或身份</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="5"></form>
+    <h2>&nbsp6.我希望別人仰慕我</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="6"></form>
+    <h2>&nbsp7.我曾經通過欺詐或撒謊來達成自己的目的</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="7"></form>
+    <h2>&nbsp8.我比較冷漠也不大關心別人的感受</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="8"></form>
+    <h2>&nbsp9.我傾向通過操縱別人來達成自己的目的</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="9"></form>
+    <h2>&nbsp10.我通常期望別人給我特殊優待</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="10"></form>
+    <h2>&nbsp11.我希望得到別人的關注</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="11"></form>
+    <h2>&nbsp12.我比較關心自己的利益，為了達成目的可以無視社會規範</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入1-7:<input type="text"id="12"></form>
+    <h1>&nbsp總分：</h1><h1 id="ZF"></h1>
+    <h1>&nbsp馬基雅維利主義分數：</h1><h1 id="MJ"></h1>
+    <h1>&nbsp自戀分數：</h1><h1 id="ZL"></h1>
+    <h1>&nbsp精神病態分數：</h1><h1 id="JS"></h1>
+    <button type="button"onclick="cal()">計算得分</button>
+    <script>
+      function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");}
+      function cal(){
+        let a = parseInt(document.getElementById("1").value);
+        let b = parseInt(document.getElementById("2").value);
+        let c = parseInt(document.getElementById("3").value);
+        let d = parseInt(document.getElementById("4").value);
+        let e = parseInt(document.getElementById("5").value);
+        let f = parseInt(document.getElementById("6").value);
+        let g = parseInt(document.getElementById("7").value);
+        let h = parseInt(document.getElementById("8").value);
+        let i = parseInt(document.getElementById("9").value);
+        let j = parseInt(document.getElementById("10").value);
+        let k = parseInt(document.getElementById("11").value);
+        let l = parseInt(document.getElementById("12").value);
+        let zf = a + b + c + d + e + f + g + h + i + j + k + l;
+        let mj = a + c + g + i;
+        let zl = e + f + j + k;
+        let js = b + d + h + l;
+        document.getElementById("ZF").innerHTML = zf;
+        document.getElementById("MJ").innerHTML = mj;
+        document.getElementById("ZL").innerHTML = zl;
+        document.getElementById("JS").innerHTML = js;
+        if(zf>45) {
+          alert("你的心理算是非常黑暗了!");
+        }
+        else{
+          alert("安心吧，你是正常的!")
+        }
+      }
+    </script>
+  </div>
+  <div class="column1">
+    <img src= "TP.png"width="100%" height="auto"/>
+  </div>
+</div>
+</body>
+</html>

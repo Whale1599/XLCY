@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1" >
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <title>MBTI測驗</title>
+</head>
+<style>
+.dropdown {position: relative; display: inline-block;}
+.dropbtn {background-color: #CDCD00; color: white; padding: 16px; font-size: 16px; border: none; min-width: 120px;min-height: 60px; z-index: 1;}
+.dropdown-content {display: none; position: absolute; background-color: #f1f1f1;}
+.dropdown-content a {color: black; padding: 12px 16px; text-decoration: none; display: block;background-color: #EEEE00;}
+.show {display: block;}
+#header {height:200px;width:100%;background-color:#EEE685;background-repeat:no-repeat;background-size:cover;padding:1em; font-family:DFKai-sb;text-shadow: 0.5px 0.5px 0.5px #8B8B00;}
+#article {background-color:#8EE5EE;background-repeat:no-repeat;background-size:cover;}
+a:link {color:#030303;}
+a:visited {color:#030303;}
+a:hover {color:#EE2C2C;}
+a:active {color:#4D4D4D;}
+.column1 {float: left;width: 50%;background-color:#8EE5EE;background-size:cover;}
+font {color:#9ACD32;text-align:left; }
+h2 {color: #E066FF}
+h1 {color:#7CFC00}
+h4 {text-align:right}
+p {color:#9ACD32}
+form{color: #E066FF}
+* {box-sizing: border-box; margin:0;}
+@media screen and (max-width: 768px)
+{.column1{width: 100%; height: 90%;
+}
+}
+</style>
+<body>
+<div style="background-color:#CDAD00;">
+  <div class="dropdown";>
+     <button onclick="myFunction()" class="dropbtn">更多測驗</button>
+     <div id="myDropdown" class="dropdown-content">
+     <a href="RGCY.html">黑暗三角人格測驗</a>
+     <a href="MBTI.html">MBTI</a>
+     <a href="RGFX.html">MBTI人格分析</a>
+     </div>
+  </div>
+</div>
+<div id="header">
+  <font size="10"><b>MBTI測驗</b></font>
+  <p>MBTI 全名 Myers Briggs Type Indicator 是人類性格的外在狀態模式</p>
+  <p>MBTI 是一種自我評核的性格問卷，在美國已廣泛地受人採用，能幫助你了解自己屬於哪種性格類別</p>
+  <p>請根據描述選擇較符合自己的選項</p>
+</div>
+<div id="article">
+    <h2>&nbsp1.我傾向從哪裡得到力量？</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 別人) (1 自己的想法)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="1"></form>
+    <h2>&nbsp2.當我參加社交聚會時</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 一旦開始投入聚會，也許是最晚離開的那一個) (1 在剛開始時，就疲倦並且想回家)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="2"></form>
+    <h2>&nbsp3.哪一種聽起來比較吸引你</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 與伴侶到很多人且社交活動頻繁的地方) (1 待在家中與伴侶做一些特別的事情，例：看影片並享用好吃的晚餐)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="3"></form>
+    <h2>&nbsp4.在約會中，我通常</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 整體來很健談) (1 較安靜並保留，直到覺得舒服)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="4"></form>
+    <h2>&nbsp5.我傾向於在哪裡遇見我的伴侶</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 宴會、夜總會、工作上、休閒活動中) (1 較私人的方式，例如親密的家人或朋友介紹)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="5"></form>
+    <h2>&nbsp6.我傾向擁有</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 很多認識的人和親密的朋友) (1 一些很親密的朋友和認識的人)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="6"></form>
+    <h2>&nbsp7.我的伴侶和愛的人一般對我說</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 你難道不能安靜一點嗎) (1 可以從你的世界中出來嗎)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="7"></form>
+    <h2>&nbsp8.我傾向透過那些方式收集資訊</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 對可能發生之事的想像和期望) (1 對目前狀況的實際認知)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="8"></form>
+    <h2>&nbsp9.我傾向相信</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 我的直覺) (1 我的觀察和經驗)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="9"></form>
+    <h2>&nbsp10.當我置身於一段關係時，我傾向相信</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 永遠有進步的空間) (1 若它沒有被破壞，別修補它)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="10"></form>
+    <h2>&nbsp11.當我對一個約會覺得放心時，我傾向談論</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 未來，和生活的種種可能性) (1 實際的、具體的，關於"此時此地"的事物)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="11"></form>
+    <h2>&nbsp12.我是哪種人</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 喜歡先看整個大局面) (1 喜歡先拿捏細節)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="12"></form>
+    <h2>&nbsp13.我是哪種型的人</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 活在想像裡) (1 活在現實中)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="13"></form>
+    <h2>&nbsp14.我通常傾向於</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 想像一大堆即將來臨之約會的事情) (1 拘謹地想像即將來臨的約會，只期待讓它自然發生)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="14"></form>
+    <h2>&nbsp15.我傾向怎麼做決定</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0  先看心意再看邏輯) (1 先看邏輯再看心意)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="15"></form>
+    <h2>&nbsp16.我比較能夠察覺到</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 他需要情感支持) (1 他不符合邏輯)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="16"></form>
+    <h2>&nbsp17.當和某人分手時</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 情緒會深陷其中，很難抽身而出) (1 直接了當地將過去戀人的影子甩開)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="17"></form>
+    <h2>&nbsp18.當與一個人交往時，我比較在意</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 情感上的相容性：表達愛意和對另一半的需求很敏感) (1 智慧上的相容性：溝通重要的想法，客觀地討論事情)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="18"></form>
+    <h2>&nbsp19.當我不同意我伴侶的想法時</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 盡可能避免傷害對方的感受) (1 毫無保留地說出自己的想法)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="19"></form>
+    <h2>&nbsp20.認識我的人常形容我為</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 熱情和敏感) (1 邏輯和明確)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="20"></form>
+    <h2>&nbsp21.我把大部分和別人的相遇視為</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 友善及重要的) (1 另有目的)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="21"></form>
+    <h2>&nbsp22.若朋友邀情我明天去旅行，我會</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 必須先檢查時間表) (1 立即收拾行李)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="22"></form>
+    <h2>&nbsp23.第一次約會中，對方遲到了</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 我會很不高興) (1 一點都不在乎，因為自己也常常遲到)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="23"></form>
+    <h2>&nbsp24.約會前我傾向</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 事先知道行程，才能做足準備) (1 自然發生，不做太多計畫)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="24"></form>
+    <h2>&nbsp25.我的生活都是</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 日程表和組織) (1 自然發生和彈性)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="25"></form>
+    <h2>&nbsp26.哪一項比較常見</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 我準時，其他人遲到) (1 其他人準時，我遲到)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="26"></form>
+    <h2>&nbsp27.我傾向</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 下定決心且做出最後肯定的結論) (1 開放我的選擇且持續收集資訊)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="27"></form>
+    <h2>&nbsp28.我是哪類型的人</h2>
+    <h2>&nbsp&nbsp&nbsp&nbsp(0 喜歡在一個時間裡專心於一件事情直到完成) (1 享受同時進行好幾件事)</h2>
+    <form>&nbsp&nbsp&nbsp&nbsp&nbsp請輸入0 or 1:<input type="text"id="28"></form>
+    <button type="button"onclick="cal()">測驗結果</button>
+    <script>
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");}
+      function cal(){
+        let a = parseInt(document.getElementById("1").value);
+        let b = parseInt(document.getElementById("2").value);
+        let c = parseInt(document.getElementById("3").value);
+        let d = parseInt(document.getElementById("4").value);
+        let e = parseInt(document.getElementById("5").value);
+        let f = parseInt(document.getElementById("6").value);
+        let g = parseInt(document.getElementById("7").value);
+        let h = parseInt(document.getElementById("8").value);
+        let i = parseInt(document.getElementById("9").value);
+        let j = parseInt(document.getElementById("10").value);
+        let k = parseInt(document.getElementById("11").value);
+        let l = parseInt(document.getElementById("12").value);
+        let m = parseInt(document.getElementById("13").value);
+        let n = parseInt(document.getElementById("14").value);
+        let o = parseInt(document.getElementById("15").value);
+        let p = parseInt(document.getElementById("16").value);
+        let q = parseInt(document.getElementById("17").value);
+        let r = parseInt(document.getElementById("18").value);
+        let s = parseInt(document.getElementById("19").value);
+        let t = parseInt(document.getElementById("20").value);
+        let u = parseInt(document.getElementById("21").value);
+        let v = parseInt(document.getElementById("22").value);
+        let w = parseInt(document.getElementById("23").value);
+        let x = parseInt(document.getElementById("24").value);
+        let y = parseInt(document.getElementById("25").value);
+        let z = parseInt(document.getElementById("26").value);
+        let aa = parseInt(document.getElementById("27").value);
+        let bb = parseInt(document.getElementById("28").value);
+        let ei = a + b + c + d + e + f + g;
+        let ns = h + i + j + k + l + m + n;
+        let ft = o + p + q + r + s + t + u;
+        let jp = v + w + x + y + z + aa + bb;
+        if(ei>3.5 && ns>3.5 && ft>3.5 && jp>3.5) {
+          alert("你是ISTP鑑賞家");
+        }
+        else if (ei>3.5 && ns>3.5 && ft>3.5 && jp<3.5) {
+          alert("你是ISTJ物流師");
+        }
+        else if (ei>3.5 && ns>3.5 && ft<3.5 && jp<3.5) {
+          alert("你是ISFJ守衛者");
+        }
+        else if (ei>3.5 && ns>3.5 && ft<3.5 && jp>3.5) {
+          alert("你是ISFP探險家");
+        }
+        else if (ei>3.5 && ns<3.5 && ft<3.5 && jp<3.5) {
+          alert("你是INFJ提倡者");
+        }
+        else if (ei<3.5 && ns<3.5 && ft<3.5 && jp<3.5) {
+          alert("你是ENFJ主人公");
+        }
+        else if (ei>3.5 && ns<3.5 && ft>3.5 && jp<3.5) {
+          alert("你是INTJ建築師");
+        }
+        else if (ei>3.5 && ns<3.5 && ft>3.5 && jp>3.5) {
+          alert("你是INTP邏輯學家");
+        }
+        else if (ei>3.5 && ns<3.5 && ft<3.5 && jp>3.5) {
+          alert("你是INFP調停者");
+        }
+        else if (ei<3.5 && ns>3.5 && ft<3.5 && jp<3.5) {
+          alert("你是ESFJ執政官");
+        }
+        else if (ei<3.5 && ns>3.5 && ft<3.5 && jp>3.5) {
+          alert("你是ESFP表演者");
+        }
+        else if (ei<3.5 && ns<3.5 && ft<3.5 && jp>3.5) {
+          alert("你是ENFP競選者");
+        }
+        else if (ei<3.5 && ns>3.5 && ft>3.5 && jp>3.5) {
+          alert("你是ESTP企業家");
+        }
+        else if (ei<3.5 && ns>3.5 && ft>3.5 && jp<3.5) {
+          alert("你是ESTJ總經理");
+        }
+        else if (ei<3.5 && ns<3.5 && ft>3.5 && jp>3.5) {
+          alert("你是ENTP辯論家");
+        }
+        else if (ei<3.5 && ns<3.5 && ft>3.5 && jp<3.5) {
+          alert("你是ENTJ指揮官");
+        }
+        else{
+          alert("檢查看看有沒有填錯!")
+        }
+      }
+    </script>
+</div>
+</body>
+</html>
